@@ -1,0 +1,209 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Set default font family */
+}
+
+body {
+    background-image: url('bg_header_bottom.jpg'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 20px; /* Adjust the top margin to move the navbar lower */
+    z-index: 1000;
+    padding: 1.5rem 0;
+    
+}
+
+
+
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    /* Link color */
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Padding for nav links */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+    background-color: #f3590c; /* Hover and active background color */
+    color: #fff; /* Hover and active text color */
+    border-radius: 5px; /* Rounded corners */
+}
+.navbar-brand{
+    float: right;
+    margin-left: 5px;
+
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem; /* Padding for hero section */
+    color: #fff; /* Text color */
+    min-height: 100vh; /* Minimum height */
+    margin-top: 120px; /* Margin top for spacing below fixed header */
+}
+
+.hero-content {
+    max-width: 600px; /* Maximum width for content */
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Heading 1 font size */
+    margin-bottom: 1rem; /* Margin bottom for heading */
+}
+
+.hero-content p {
+    font-size: 1.2rem; /* Paragraph font size */
+    margin-bottom: 2rem; /* Margin bottom for paragraphs */
+}
+
+.hero-buttons {
+    display: flex; /* Display buttons in flex */
+}
+
+.hero-buttons .btn {
+    margin-right: 1rem; /* Margin between buttons */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.hero-image img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: -123px;
+
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack content in column on smaller screens */
+        text-align: center; /* Center align text */
+        padding: 3rem 1rem; /* Adjusted padding */
+    }
+
+    .hero-content {
+        margin-bottom: 2rem; /* Margin bottom for smaller screens */
+    }
+
+    .hero-image img {
+        width: 300px; /* Adjusted image width */
+    }
+}
+
+/* Custom CSS for transparent buttons */
+.btn-transparent {
+    background-color: transparent;
+    border: 2px solid #fff; /* White border */
+    color: #fff; /* White text */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+.btn-transparent:hover {
+    background-color: #f3590c; /* Orange background on hover */
+    border-color: #f3590c; /* Orange border on hover */
+    color: #fff; /* White text on hover */
+}
+/* Continue from your existing CSS */
+
+/* Custom styling for the courses section */
+.courses {
+    background-color: #ffffff; /* White background */
+    padding: 4rem 0; /* Padding top and bottom */
+}
+
+.courses .card {
+    border: none; /* Remove default card border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: transform 0.2s ease; /* Smooth card hover effect */
+    height: 100%;
+}
+
+.courses .card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+.courses .card-body {
+    padding: 2rem; /* Padding inside card body */
+}
+
+.courses .card-title {
+    font-size: 1.5rem; /* Card title font size */
+    margin-bottom: 1rem; /* Margin bottom for title */
+}
+
+.courses .card-text {
+    font-size: 1.1rem; /* Card text font size */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.courses .btn-primary {
+    background-color: #f3590c; /* Orange background for primary button */
+    border: none; /* Remove button border */
+    transition: background-color 0.3s ease; /* Smooth button hover effect */
+}
+
+.courses .btn-primary:hover {
+    background-color: #e64a02; /* Darker orange on hover */
+}
+.courses .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.courses .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.courses .card {
+    animation: fadeInUp 0.5s ease-out;
+}
+.courses .btn-primary {
+    background-color: #f3590c;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.courses .btn-primary:hover {
+    background-color: #e64a02;
+    transform: scale(1.05);
+}
+.courses .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.courses .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
